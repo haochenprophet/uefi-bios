@@ -1,5 +1,5 @@
 //**********************************************************************
-// PEI:Checkpoints map
+// Checkpoints map
 //**********************************************************************
 //1    - 0xF : SEC execution
 //0x10 - 0x2F: PEI CAR execution
@@ -100,7 +100,7 @@
 4 PEI_S3_RESUME_FAILED //S3 Resume
 
 
-//[PEI]:
+//[DXE]:
 0x60 DXE_CORE_STARTED
 0x61 DXE_NVRAM_INIT
 0x62 DXE_SBRUN_INIT
