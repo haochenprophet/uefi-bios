@@ -73,6 +73,7 @@
 [LibraryClasses]
   UefiDriverEntryPoint
   IoLib
-  
+  MemoryAllocationLib
+
 [Depex]
   TRUE

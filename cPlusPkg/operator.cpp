@@ -1,21 +1,24 @@
 #include "operator.h"
 
-//simple c++ 'new' operator keyword note:BUF_LEN limit .
-char	memory_buf[BUF_LEN];
-static	size_t index = 0; 
+extern "C" void * AllocateZeroPool (UINTN  AllocationSize);
+extern "C" void FreePool (void  *Buffer);
 
 void * __cdecl operator new(size_t size)
 {
-	if((index+size)>BUF_LEN) return 0;
-	void* pAddress = (void*)&memory_buf[index];
-	index += size;
-	return pAddress;
+	return AllocateZeroPool(size);
 }
 
 void * __cdecl operator new[](size_t size)
 {
-	if((index+size)>BUF_LEN) return 0;
-	void* pAddress = (void*)&memory_buf[index];
-	index += size;
-	return pAddress;
+	return AllocateZeroPool(size);
+}
+
+void __cdecl operator delete(void * p)
+{
+	FreePool(p);
+}
+
+void __cdecl operator delete[](void * p)
+{
+	FreePool(p);
 }

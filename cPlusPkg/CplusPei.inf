@@ -60,6 +60,7 @@
   PeimEntryPoint
   IoLib
   PciLib
+  MemoryAllocationLib
   
 [Ppis]
   gEfiPeiReadOnlyVariable2PpiGuid 

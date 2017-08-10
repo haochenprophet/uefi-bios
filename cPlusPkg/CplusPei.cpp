@@ -13,7 +13,9 @@ extern "C" EFI_STATUS EFIAPI CplusPeiInit (
 	sio.write(2,0x60,3);
 	sio.write(2,0x61,0xF8);
 	sio.write(2,0x30,1);
-	
+	Cio *pio= new Cio;
+	if(!pio) return -1;//EFI_ERROR;
+	pio->read(0xCFC,&data);
 	Cpci pci;
 	pci.and(PCI_LIB_ADDRESS(1,16,7,0xF8),(UINT8)0xFC);
 	pci.or(PCI_LIB_ADDRESS(0,31,0,0x82),(UINT8)1);
