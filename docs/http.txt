@@ -1,2 +1,6 @@
+
 #my mail
 https://software.intel.com/en-us/intel-software-technical-documentation
+
+#intel support
+https://www.intel.com/content/www/us/en/support.html
