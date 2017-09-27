@@ -8,6 +8,7 @@ namespace n_object
 	{
 	public:
 		char * name;
+		int id;
 	public:
 		Cobject();
 		~Cobject();
