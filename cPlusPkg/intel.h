@@ -2,12 +2,16 @@
 #define D_INTEL_H
 #include "manufactory.h"
 
-class Cintel:public Cmanufactory
+namespace n_intel
 {
-public:
-	Cintel();
-	~Cintel();
-};
-
+	class Cintel:public Cmanufactory
+	{
+	public:
+		Cintel();
+		~Cintel();
+	};
+	
+}
+using namespace n_intel;
 
 #endif //D_INTEL_H

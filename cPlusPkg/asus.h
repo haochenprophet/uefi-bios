@@ -2,12 +2,16 @@
 #define D_ASUS_H
 #include "manufactory.h"
 
-class Casus:public Cmanufactory
+namespace n_asus
 {
-public:
-	Casus();
-	~Casus();
-};
 
+	class Casus:public Cmanufactory
+	{
+	public:
+		Casus();
+		~Casus();
+	};
+}
 
+using namespace n_asus;
 #endif //D_ASUS_H

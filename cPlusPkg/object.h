@@ -2,13 +2,17 @@
 #define D_OBJECT_H
 
 #include <Uefi.h>
-
-class Cobject
+namespace n_object
 {
-public:
-	Cobject();
-	~Cobject();
-	void * getClass();
-};
+	class Cobject
+	{
+	public:
+		Cobject();
+		~Cobject();
+		void * getClass();
+	};
+	
+}
 
+using namespace n_object;
 #endif //D_OBJECT_H

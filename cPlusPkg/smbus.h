@@ -2,13 +2,18 @@
 #define D_SMBUS_H
 
 #include "io.h"
-
-class Csmbus:public Cio
+#include "memory.h"
+namespace n_smbus
 {
-public:
-	Csmbus();
-	~Csmbus();
-};
+	class Csmbus:public Cio ,public Cmemory
+	{
+	public:
+		Csmbus();
+		~Csmbus();
+	};
+	
+}
 
+using namespace n_smbus;
 
 #endif //D_SMBUS_H

@@ -3,11 +3,17 @@
 
 #include "object.h"
 
-class Cmanufactory:public Cobject
+namespace n_manufactory
 {
-public:
-	Cmanufactory();
-	~Cmanufactory();
-};
+	class Cmanufactory:public Cobject
+	{
+	public:
+		Cmanufactory();
+		~Cmanufactory();
+	};
+	
+}
+
+using namespace n_manufactory;
 
 #endif //D_MANUFACTORY_H

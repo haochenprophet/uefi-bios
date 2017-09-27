@@ -4,11 +4,15 @@
 #include "pci.h"
 #include "memory.h"
 
-class Cspi:public Cmemory
+namespace n_spi
 {
-public:
-	Cspi();
-	~Cspi();
-};
+	class Cspi:public Cmemory
+	{
+	public:
+		Cspi();
+		~Cspi();
+	};
 
+}
+using namespace n_spi;
 #endif //D_SPI_H

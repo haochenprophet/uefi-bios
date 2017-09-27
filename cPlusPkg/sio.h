@@ -35,67 +35,73 @@
 #define CHIP_REG_H	0x20
 #define CHIP_REG_L	0x21
 
-class Csio:public Cio ,public Cmemory
+namespace n_sio
 {
-public:
-	UINT16 indexPort;//index port
-	UINT16 dataPort;//data port
-public:
-	Csio();
-	~Csio();
-	virtual int unlock();//note:unlock should return not 0 
-	virtual int lock();
-	virtual	int isMe(UINT16 chipid);//should return not 0 
-	virtual int setIoAddr(UINT16 indexPort=0x2E,UINT16 dataPort=0x2F);//default 2e,2f
-	UINT8  read(UINT8 ldn,UINT8 reg,UINT8 *data);//*data :out data
-	UINT8  write(UINT8 ldn,UINT8 reg,UINT8 data);//return -1:fail 
-	UINT16 chipId();
-};
+	
+	class Csio:public Cio ,public Cmemory
+	{
+	public:
+		UINT16 indexPort;//index port
+		UINT16 dataPort;//data port
+	public:
+		Csio();
+		~Csio();
+		virtual int unlock();//note:unlock should return not 0 
+		virtual int lock();
+		virtual	int isMe(UINT16 chipid);//should return not 0 
+		virtual int setIoAddr(UINT16 indexPort=0x2E,UINT16 dataPort=0x2F);//default 2e,2f
+		UINT8  read(UINT8 ldn,UINT8 reg,UINT8 *data);//*data :out data
+		UINT8  write(UINT8 ldn,UINT8 reg,UINT8 data);//return -1:fail 
+		UINT16 chipId();
+	};
 
-class CAstSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-	int isMe(UINT16 chipid);
-};
+	class CAstSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+		int isMe(UINT16 chipid);
+	};
 
-class CIteSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-};
+	class CIteSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+	};
 
-class CWinbondSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-};
+	class CWinbondSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+	};
 
-class CNctSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-	int isMe(UINT16 chipid);
-};
-
-
-class CFintekSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-};
+	class CNctSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+		int isMe(UINT16 chipid);
+	};
 
 
-class CSmscSio :public Csio
-{
-public:
-	int unlock();
-	int lock();
-};
+	class CFintekSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+	};
 
+
+	class CSmscSio :public Csio
+	{
+	public:
+		int unlock();
+		int lock();
+	};
+
+}
+
+using namespace n_sio;
 #endif //D_SIO_H

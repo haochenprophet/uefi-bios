@@ -2,12 +2,15 @@
 #define D_SMBIOS_H
 
 #include "memory.h"
-
-class Csmbios:public Cmemory
+namespace n_smbios
 {
-public:
-	Csmbios();
-	~Csmbios();
-};
-
+	class Csmbios:public Cmemory
+	{
+	public:
+		Csmbios();
+		~Csmbios();
+	};
+	
+}
+using namespace n_smbios;
 #endif //D_SMBUS_H

@@ -2,12 +2,16 @@
 #define D_GOOGLE_H
 #include "manufactory.h"
 
-class Cgoogle:public Cmanufactory
+namespace n_google
 {
-public:
-	Cgoogle();
-	~Cgoogle();
-};
+	class Cgoogle:public Cmanufactory
+	{
+	public:
+		Cgoogle();
+		~Cgoogle();
+	};
+}
 
+using namespace n_google;
 
 #endif //D_GOOGLE_H

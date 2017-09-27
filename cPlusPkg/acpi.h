@@ -2,12 +2,17 @@
 #define D_ACPI_H
 
 #include "memory.h"
-
-class Cacpi:public Cmemory
+namespace n_acpi
 {
-public:
-	Cacpi();
-	~Cacpi();
-};
 
+	class Cacpi:public Cmemory
+	{
+	public:
+		Cacpi();
+		~Cacpi();
+	};
+
+}
+
+using namespace n_acpi;
 #endif

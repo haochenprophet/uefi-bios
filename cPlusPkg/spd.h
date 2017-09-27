@@ -3,11 +3,16 @@
 
 #include "smbus.h"
 
-class Cspd:public Csmbus
+namespace n_spd
 {
-public:
-	Cspd();
-	~Cspd();
-};
+	class Cspd:public Csmbus
+	{
+	public:
+		Cspd();
+		~Cspd();
+	};
+	
+}
+using namespace n_spd;
 
 #endif //D_SPD_H

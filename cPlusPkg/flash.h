@@ -2,12 +2,16 @@
 #define D_FLASH_H
 
 #include "spi.h"
-
-class Cflash:public Cspi
+namespace n_flash
 {
-public:
-	Cflash();
-	~Cflash();
-};
+	class Cflash:public Cspi
+	{
+	public:
+		Cflash();
+		~Cflash();
+	};
+}
+
+using namespace n_flash;
 
 #endif //D_FLASH_H

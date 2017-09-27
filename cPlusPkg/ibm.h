@@ -2,12 +2,17 @@
 #define D_IBM_H
 #include "manufactory.h"
 
-class Cibm:public Cmanufactory
+namespace n_ibm
 {
-public:
-	Cibm();
-	~Cibm();
-};
 
+	class Cibm:public Cmanufactory
+	{
+	public:
+		Cibm();
+		~Cibm();
+	};
+	
+}
+using namespace n_ibm;
 
 #endif //D_IBM_H

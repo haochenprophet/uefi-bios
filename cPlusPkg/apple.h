@@ -2,12 +2,16 @@
 #define D_APPLE_H
 #include "manufactory.h"
 
-class Capple:public Cmanufactory
+namespace n_apple
 {
-public:
-	Capple();
-	~Capple();
-};
 
+	class Capple:public Cmanufactory
+	{
+	public:
+		Capple();
+		~Capple();
+	};
 
+}
+using namespace n_apple;
 #endif //D_APPLE_H
