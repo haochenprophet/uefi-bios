@@ -7,6 +7,8 @@ namespace n_object
 	class Cobject
 	{
 	public:
+		char * name;
+	public:
 		Cobject();
 		~Cobject();
 		void * getClass();

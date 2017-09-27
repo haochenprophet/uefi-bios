@@ -2,7 +2,7 @@
 
 Cobject::Cobject()
 {
-	
+	this->name=nullptr;
 }
 
 Cobject::~Cobject()
