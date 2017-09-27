@@ -1,17 +1,3 @@
-#**********************************************************************
-#**********************************************************************
-#**                                                                  **
-#**        (C)Copyright 1985-2010, American Megatrends, Inc.         **
-#**                                                                  **
-#**                       All Rights Reserved.                       **
-#**                                                                  **
-#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
-#**                                                                  **
-#**                       Phone: (770)-246-8600                      **
-#**                                                                  **
-#**********************************************************************
-#**********************************************************************
-
 [Defines]
 	INF_VERSION 		=  0x00010005
 	VERSION_STRING  	=  1.0
@@ -29,6 +15,10 @@
   object.h
   cpu.cpp
   cpu.h
+  task.cpp
+  task.h
+  delay.cpp
+  delay.h
   io.cpp
   io.h
   memory.cpp
@@ -39,6 +29,8 @@
   pci.h
   sio.cpp
   sio.h
+  int8259.cpp
+  int8259.h
   smbus.cpp
   smbus.h
   spd.cpp
@@ -65,7 +57,7 @@
   google.h
   microsoft.cpp
   microsoft.h
-      
+  
 [Packages]
   MdePkg/MdePkg.dec
   CplusPkg/CplusPkg.dec 
