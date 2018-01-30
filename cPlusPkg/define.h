@@ -1,5 +1,5 @@
-#ifndef DEFINE_H
-#define DEFINE_H
+#ifndef D_DEFINE_H
+#define D_DEFINE_H
 /*
 //make error: nullptr
 const  class nullptr_t_t  

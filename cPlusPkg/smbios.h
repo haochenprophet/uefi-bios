@@ -1,10 +1,11 @@
 #ifndef D_SMBIOS_H
 #define D_SMBIOS_H
 
-#include "memory.h"
+#include "smbios_type.h"
+
 namespace n_smbios
 {
-	class Csmbios:public Cmemory
+	class Csmbios:public Csmbios_type
 	{
 	public:
 		Csmbios();

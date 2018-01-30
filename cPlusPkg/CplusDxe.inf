@@ -38,6 +38,8 @@
   spd.h
   acpi.cpp
   acpi.h
+  smbios_type.cpp
+  smbios_type.h
   smbios.cpp
   smbios.h
   spi.cpp
