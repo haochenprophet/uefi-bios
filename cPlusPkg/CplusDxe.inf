@@ -11,6 +11,7 @@
   CplusDxe.h
   operator.cpp
   operator.h
+  define.h
   object.cpp
   object.h
   cpu.cpp
