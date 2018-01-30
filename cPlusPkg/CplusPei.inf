@@ -11,6 +11,7 @@
   CplusPei.h
   operator.cpp
   operator.h
+  define.h
   object.cpp
   object.h
   cpu.cpp
@@ -37,6 +38,8 @@
   spd.h
   acpi.cpp
   acpi.h
+  smbios_type.cpp
+  smbios_type.h
   smbios.cpp
   smbios.h
   spi.cpp
