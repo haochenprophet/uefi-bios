@@ -3,6 +3,7 @@
 
 #include <Uefi.h>
 #include "define.h"
+#include "operator.h"
 
 namespace n_object
 {
