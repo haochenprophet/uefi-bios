@@ -2,12 +2,13 @@
 #define D_SMBIOS_TYPE_H
 
 #include "memory.h"
+#include "pci.h"
 namespace n_smbios_type
 {
 	class Csmbios_type:public Cmemory,public Cpci
 	{
 	public:
-		Csmbios_typ();
+	    Csmbios_type();
 		~Csmbios_type();
 	};
 	

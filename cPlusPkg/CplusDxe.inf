@@ -30,6 +30,8 @@
   pci.h
   sio.cpp
   sio.h
+  serial.cpp
+  serial.h
   int8259.cpp
   int8259.h
   smbus.cpp
