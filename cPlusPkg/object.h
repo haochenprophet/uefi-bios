@@ -2,6 +2,9 @@
 #define D_OBJECT_H
 
 #include <Uefi.h>
+#include "define.h"
+#include "operator.h"
+
 namespace n_object
 {
 	class Cobject

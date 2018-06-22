@@ -1,4 +1,4 @@
 # uefi-bios
-uefi-bios
+uefi-bios C++ package
 
-git clone https://github.com/open-workspace/uefi-bios.git
+git clone https://github.com/open-bios/uefi-bios

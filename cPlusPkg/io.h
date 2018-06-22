@@ -8,8 +8,14 @@ extern "C" {
 #include "object.h"
 namespace n_io
 {
+    union u_value{
+        UINT8 b_data;
+        UINT16 w_data;
+        UINT32 d_data;
+    };
 	class Cio:public Cobject
 	{
+	    u_value v;
 	public:
 		Cio();
 		~Cio();
