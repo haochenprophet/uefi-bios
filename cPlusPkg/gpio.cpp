@@ -52,7 +52,7 @@ int Cgpio::set_gpo(int pin,int high_low)//high_low: GPO_LOW ,GPO_HIGH
 #if _gpio_TEST
 int main()
 {
-	cout<<"gpio.cpp/main()\n";
+	//cout<<"gpio.cpp/main()\n";
 	return 0;
 }
 #endif

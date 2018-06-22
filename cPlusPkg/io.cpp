@@ -96,3 +96,57 @@ UINT8  Cio::isaWrite(UINT16 indexPort,UINT16 index,UINT16 dataPort,UINT8 data)
 	this->write(indexPort,index);
 	return this->write(dataPort,data);
 }
+
+unsigned Cio::byte_read(unsigned port)
+{
+    return IoRead8(port);
+}
+
+void Cio::byte_write(unsigned char byte,unsigned port)
+{
+    IoWrite8(port,byte);
+}
+
+unsigned Cio::word_read(unsigned port)
+{
+    return IoRead16(port);
+}
+
+void Cio::word_write(unsigned short word,unsigned port)
+{
+    IoWrite16(port,word);
+}
+
+unsigned Cio::dword_read(unsigned port)
+{
+    return IoRead32(port);
+}
+
+void Cio::dword_write(unsigned dword,unsigned port)
+{
+    IoWrite32 (port,dword);
+}
+
+unsigned  Cio::isa_read(unsigned short index_port,unsigned char index,unsigned short data_port)
+{
+    IoWrite8(index_port,index);
+    return this->byte_read(data_port);
+}
+
+void Cio::isa_write(unsigned short index_port,unsigned char index,unsigned short data_port,unsigned char data)
+{
+    IoWrite8(index_port,index);
+    IoWrite8(data_port,data);
+}
+
+void Cio::isa_or(unsigned short index_port,unsigned char index,unsigned short data_port,unsigned char bits)
+{
+    IoWrite8(index_port,index);
+    IoWrite8(data_port,(unsigned char)this->byte_read(data_port)|bits);
+}
+
+void Cio::isa_and(unsigned short index_port,unsigned char index,unsigned short data_port,unsigned char bits)
+{
+    IoWrite8(index_port,index);
+    IoWrite8(data_port,(unsigned char)this->byte_read(data_port)&bits);
+}

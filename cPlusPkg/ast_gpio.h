@@ -3,8 +3,8 @@
 
 #include "sio.h"
 #include "gpio.h"
-#include <string.h>
-#include <ctype.h>
+//#include <string.h>
+//#include <ctype.h>
 
 #define LPC2AHB_LDN 0x0D
 #define AST_GPIO_BASE 0x1E780000

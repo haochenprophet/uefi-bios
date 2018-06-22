@@ -4,10 +4,10 @@
 #include "io.h"
 #include "pin.h"
 
-using std::cout;
-using std::endl;
+//using std::cout;
+//using std::endl;
 
-#define OUT_ERROR cout<<"Error:"<<__FILE__<<"/"<<__FUNCTION__<<"/"<<__LINE__<<":"<<endl;
+#define OUT_ERROR //cout<<"Error:"<<__FILE__<<"/"<<__FUNCTION__<<"/"<<__LINE__<<":"<<endl;
 
 typedef unsigned long GpioAddrT;
 

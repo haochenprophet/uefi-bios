@@ -161,3 +161,22 @@ int CSmscSio::lock()
 	Cio::write(this->indexPort,(UINT8)SMSC_LOCK);	
 	return 0;
 }
+
+
+int Cast::unlock()
+{
+    Cio::write(this->indexPort,(UINT8)AST_UNLOCK);
+    Cio::write(this->indexPort,(UINT8)AST_UNLOCK);
+	return 0;
+}
+
+int Cast::lock()
+{
+    Cio::write(this->indexPort,(UINT8)AST_LOCK);
+	return 0;
+}
+
+int Cast::who()
+{
+	return AstId;
+}

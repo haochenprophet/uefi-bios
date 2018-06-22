@@ -43,7 +43,7 @@ int CintelGpio::convert(int pin)//pin number convert register bit offset
 		return this->bit_n;
 	}
 
-	cout<<"pin="<<pin;
+//	cout<<"pin="<<pin;
 	OUT_ERROR
 
 	return -1;//fail not exist the GPIO pin[n] 
@@ -59,37 +59,37 @@ int CintelGpio::parse(int pin)
 
 	if(this->convert(pin)<0) return -1;
 
-	cout<<"GPIO["<<pin<<"]:\t";
+//	cout<<"GPIO["<<pin<<"]:\t";
 
 	if(this->dword_read(this->gpio_base+this->use_sel)&(1<<this->bit_n) )
 	{
-		cout<<"GPIO\t";
+//		cout<<"GPIO\t";
 
 		if(this->dword_read(this->gpio_base+this->io_sel)&(1<<this->bit_n) )
 		{
-			cout<<"Input\t";
+//			cout<<"Input\t";
 		}
 		else
 		{
-			cout<<"Ouput\t";
+//			cout<<"Ouput\t";
 		}
 
 		if(this->dword_read(this->gpio_base+this->gp_lvl)& (1<<this->bit_n))
 		{
-			cout<<"High\t";
+//			cout<<"High\t";
 		}
 		else
 		{
-			cout<<"Low\t";
+//			cout<<"Low\t";
 		}
 
 	}
 	else
 	{
-		cout<<"Native\t";
+//		cout<<"Native\t";
 	}
 
-	cout<<"\n";
+//	cout<<"\n";
 
 	return 0;
 }

@@ -2,7 +2,7 @@
 #define AST_CHIPS_REGISTER_CPP
 
 #include "ast_chips_register.h"
-
+/*
 SioAndOr ahb_bus_read_tab[]
 {
 	//unlock
@@ -310,5 +310,5 @@ AstMultiPin multi_pin_tab[]
 
 const int multi_pin_tab_count=sizeof(multi_pin_tab)/sizeof(AstMultiPin);
 
-
+*/
 #endif//AST_CHIPS_REGISTER_CPP

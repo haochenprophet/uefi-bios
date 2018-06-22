@@ -38,9 +38,16 @@ int CAstGpio::set_map(int parallel_serial)//set register map
 
 	return 0;
 }
+int strlen(char *cp)
+{
+    int n;
+    for(n=0;*cp!='\0';n++,cp++);
+    return n;
+}
 
 int CAstGpio::get_number(char * pin_name)//"A0-AB7"
 {
+    /*
 	int offset0=0,offset1=0,offset2=0,len;
 	if(!pin_name) return -1;
 
@@ -60,7 +67,7 @@ int CAstGpio::get_number(char * pin_name)//"A0-AB7"
 		offset0=toupper(pin_name[1])-'0';
 		return (offset1*8+offset0);
 	}
-	
+	*/
 	return -1;
 }
 

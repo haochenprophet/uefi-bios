@@ -2,7 +2,7 @@
 #define INTEL_GPIO_H
 
 #include "gpio.h"
-#include <stdlib.h>
+//#include <stdlib.h>
 
 //note: below defien by chipset refine 
 #define DEFAULT_GPIO_BASE  0x500  // IO address 0x500,The IO base address should be changed ,or set LPC IO decode to 0x500

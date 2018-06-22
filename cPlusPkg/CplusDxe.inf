@@ -7,57 +7,69 @@
 	ENTRY_POINT			=  CplusDxeDriverEntryPoint
 
 [Sources]
-  CplusDxe.cpp
-  CplusDxe.h
-  operator.cpp
-  operator.h
-  object.cpp
-  object.h
-  cpu.cpp
-  cpu.h
-  task.cpp
-  task.h
-  delay.cpp
-  delay.h
-  io.cpp
-  io.h
-  memory.cpp
-  memory.h
-  msr.cpp
-  msr.h
-  pci.cpp
-  pci.h
-  sio.cpp
-  sio.h
-  int8259.cpp
-  int8259.h
-  smbus.cpp
-  smbus.h
-  spd.cpp
-  spd.h
-  acpi.cpp
-  acpi.h
-  smbios.cpp
-  smbios.h
-  spi.cpp
-  spi.h
-  flash.cpp
-  flash.h
-  manufactory.cpp
-  manufactory.h
-  asus.cpp
-  asus.h
-  apple.cpp
-  apple.h
-  intel.cpp
-  intel.h
-  ibm.cpp
-  ibm.h
-  google.cpp
-  google.h
-  microsoft.cpp
-  microsoft.h
-  
+acpi.cpp
+acpi.h
+apple.cpp
+apple.h
+asus.cpp
+asus.h
+bits.cpp
+bits.h
+CplusDxe.cpp
+CplusDxe.h
+CplusPei.cpp
+CplusPei.h
+cpu.cpp
+cpu.h
+delay.cpp
+delay.h
+flash.cpp
+flash.h
+google.cpp
+google.h
+gpio.cpp
+gpio.h
+ibm.cpp
+ibm.h
+int8259.cpp
+int8259.h
+intel.cpp
+intel.h
+intel_gpio.cpp
+intel_gpio.h
+io.cpp
+io.h
+manufactory.cpp
+manufactory.h
+memory.cpp
+memory.h
+microsoft.cpp
+microsoft.h
+msr.cpp
+msr.h
+object.cpp
+object.h
+operator.cpp
+operator.h
+pci.cpp
+pci.h
+pin.cpp
+pin.h
+register.cpp
+register.h
+sio.cpp
+sio.h
+smbios.cpp
+smbios.h
+smbus.cpp
+smbus.h
+spd.cpp
+spd.h
+spi.cpp
+spi.h
+task.cpp
+task.h
+
 [Packages]
   MdePkg/MdePkg.dec
   CplusPkg/CplusPkg.dec 

@@ -30,7 +30,7 @@ int Cregister::display(CommonRegister * p)
 
 int Cregister::execute(CommonRegister * p)
 {
-	PRT_ERROR
+//	PRT_ERROR
 	return -1;
 }
 

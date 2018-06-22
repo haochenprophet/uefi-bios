@@ -4,7 +4,7 @@ int my_id=0;
 
 Cobject::Cobject()
 {
-	this->name=nullptr;
+	this->name=0;
 	this->id=++my_id;
 }
 
